@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # ***************************************************************************
 # *   (c) sliptonic (shopinthewoods@gmail.com) 2014                         *
-# *   (c) Gauthier Briere - 2018                                            *
+# *   (c) Gauthier Briere - 2018 - 2021                                     *
 # *                                                                         *
 # *   This program is free software; you can redistribute it and/or modify  *
 # *   it under the terms of the GNU Lesser General Public License (LGPL)    *
@@ -102,7 +102,7 @@ RAPID_MOVES = ['G0', 'G00']
 MODAL_COMMANDS = ['G0', 'G00', 'G1', 'G01']
 
 # These commands are ignored by commenting them out
-SUPPRESS_COMMANDS = ['G98', 'G80', 'G17', 'G53', 'G54', 'G55', 'G56', 'G57', 'G58', 'G59']
+SUPPRESS_COMMANDS = ['G98', 'G99', 'G80', 'G17', 'G53', 'G54', 'G55', 'G56', 'G57', 'G58', 'G59']
 
 # Pre operation text will be inserted before every operation
 PRE_OPERATION = ''''''
