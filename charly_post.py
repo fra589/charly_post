@@ -23,7 +23,14 @@
 
 import FreeCAD
 from FreeCAD import Units
-import PathScripts.PostUtils as PostUtils
+# Path scripts organization/path have been modified since FreeCAD 0.21
+if (FreeCAD.Version()[0]+'.'+FreeCAD.Version()[1]) >= '0.21':
+  import Path
+  import Path.Base.Util as PathUtil
+  import Path.Post.Utils as PostUtils
+  import PathScripts.PathUtils as PathUtils
+else:
+  import Pacharly_post.pythScripts.PostUtils as PostUtils
 import argparse
 import datetime
 import shlex
